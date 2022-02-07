@@ -50,7 +50,7 @@
               <div class="d-none d-md-block">
                 <form action="" class="form-inline">
                   <input class="form-control" type="text" placeholder="Search" />
-                  <button class="btn btn-outline-light ml-1 type="submit">
+                  <button class="btn btn-outline-light ml-1" type="submit">
                     Find
                   </button>
                 </form>
@@ -59,9 +59,9 @@
           </nav>
     </header>
     <main>
-        <div class="container d-flex justify-content-start">
-            <section class=" w-75">
-                <section class="media img-thumbnail mt-4 px-2">
+        <div class="container d-flex justify-content-start mt-4">
+            <section class=" w-75 border rounded p-2">
+                <section class="media img-thumbnail px-2">
                     <img class="img-fluid w-25 align-self-center mr-4 rounded" src="./Media/img/02-3x2.jpg" alt="">
                     <div class="media-body">
                         <h4>HelloWorld</h4>
@@ -75,7 +75,32 @@
                         <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem ipsam blanditiis dolores recusandae totam iste similique, enim quis iusto.</p>
                     </div>
                 </section>
-                <section class="w-25"></section>
+            </section>
+            <section class="w-25 border rounded p-2 ml-1">
+                <form action="" class="form-group">
+                    <div class="form-group">
+                        <label for="" class="form-control-lable">Name</label>
+                        <input type="text" placeholder="Mike" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-control-lable">Email</label>
+                        <input type="email" placeholder="Mike@Hello.com" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </form>
+                <fieldset class="form-group">
+                    <label for="">Gener</label>
+                    <div class="form-check">
+                        <label for="" class="form-check-label">
+                            <input type="radio" name="rd" id="" class="form-check-input">Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label for="" class="form-check-label">
+                            <input type="radio" name="rd" id="" class="form-check-input">Female
+                        </label>
+                    </div>
+                </fieldset>
             </section>
         </div>
     </main>
