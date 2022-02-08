@@ -10,113 +10,177 @@
   </head>
   <body>
     <header class="bg-warning sticky-top">
+      <div class="container">
+        <h4 class="pt-1 text-center h4 text-capitalize">
+          a web page for bootstrap
+        </h4>
+      </div>
+      <nav class="navbar bg-dark navbar-dark navbar-expand-md">
         <div class="container">
-            <h4 class="pt-1 text-center h4 text-capitalize">
-              a web page for bootstrap
-            </h4>
-        </div>
-        <nav class="navbar bg-dark navbar-dark navbar-expand-md">
-            <div class="container">
-              <h2 class="navbar-brand m-0">Bootstrap</h2>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#MyNavLinks"
-                aria-controls="MyNavLinks"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="MyNavLinks">
-                <div class="navbar-nav">
-                <a href="" class="nav-item nav-link">Mountain</a>
-                <a href="" class="nav-item nav-link">Forest</a>
-                <a href="" class="nav-item nav-link">Sky</a>
-                <div class="dropdown">
-                  <p
-                    class="nav-item nav-link dropdown-toggle m-0"
-                    data-toggle="dropdown"
-                  >
-                    More
-                  </p>
-                  <div class="dropdown-menu">
-                    <a href="" class="dropdown-item">See</a>
-                    <a href="" class="dropdown-item">Polar</a>
-                  </div>
+          <h2 class="navbar-brand m-0">Bootstrap</h2>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#MyNavLinks"
+            aria-controls="MyNavLinks"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="MyNavLinks"
+          >
+            <div class="navbar-nav">
+              <a href="" class="nav-item nav-link">Mountain</a>
+              <a href="" class="nav-item nav-link">Forest</a>
+              <a href="" class="nav-item nav-link">Sky</a>
+              <div class="dropdown">
+                <p
+                  class="nav-item nav-link dropdown-toggle m-0"
+                  data-toggle="dropdown"
+                >
+                  More
+                </p>
+                <div class="dropdown-menu">
+                  <a href="" class="dropdown-item">See</a>
+                  <a href="" class="dropdown-item">Polar</a>
                 </div>
               </div>
-              <div class="d-none d-md-block">
-                <form action="" class="form-inline">
-                  <input class="form-control" type="text" placeholder="Search" />
-                  <button class="btn btn-outline-light ml-1" type="submit">
-                    Find
-                  </button>
-                </form>
-              </div>
             </div>
-          </nav>
+          </div>
+          <div class="d-none d-md-block">
+            <form action="" class="form-inline">
+              <input class="form-control" type="text" placeholder="Search" />
+              <button class="btn btn-outline-light ml-1" type="submit">
+                Find
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="container d-flex justify-content-start mt-4">
-            <section class=" w-75 border rounded p-2">
-                <section class="media img-thumbnail px-2">
-                    <img class="img-fluid w-25 align-self-center mr-4 rounded" src="./Media/img/02-3x2.jpg" alt="">
-                    <div class="media-body">
-                        <h4>HelloWorld</h4>
-                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem ipsam blanditiis dolores recusandae totam iste similique, enim quis iusto.</p>
-                    </div>
-                </section>
-                <section class="media img-thumbnail mt-4 px-2">
-                    <img class="img-fluid w-25 align-self-center mr-4 rounded" src="./Media/img/02-3x2.jpg" alt="">
-                    <div class="media-body">
-                        <h4>HelloWorld</h4>
-                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem ipsam blanditiis dolores recusandae totam iste similique, enim quis iusto.</p>
-                    </div>
-                </section>
+      <div class="container mt-4">
+        <div class="d-flex">
+          <!-- MEDIA in the left side of the page -->
+          <section class="col-12 col-md-9 border rounded p-2">
+            <section class="media img-thumbnail px-2">
+              <img
+                class="img-fluid w-25 align-self-center mr-4 rounded"
+                src="./Media/img/02-3x2.jpg"
+                alt=""
+              />
+              <div class="media-body">
+                <h4>HelloWorld</h4>
+                <p class="text-justify">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                  rem ipsam blanditiis dolores recusandae totam iste similique,
+                  enim quis iusto.
+                </p>
+              </div>
             </section>
-            <section class="w-25 border rounded p-2 ml-1">
-                <form action="" class="form-group">
-                    <div class="form-group">
-                        <label for="" class="form-control-lable">Name</label>
-                        <input type="text" placeholder="Mike" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="form-control-lable">Email</label>
-                        <input type="email" placeholder="Mike@Hello.com" class="form-control">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Save</button>
-                </form>
-                <fieldset class="form-group">
-                    <label for="">Gener</label>
-                    <div class="form-check">
-                        <label for="" class="form-check-label">
-                            <input type="radio" name="rd" id="" class="form-check-input">Male
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label for="" class="form-check-label">
-                            <input type="radio" name="rd" id="" class="form-check-input">Female
-                        </label>
-                    </div>
-                </fieldset>
+            <section class="media img-thumbnail mt-4 px-2">
+              <img
+                class="img-fluid w-25 align-self-center mr-4 rounded"
+                src="./Media/img/02-3x2.jpg"
+                alt=""
+              />
+              <div class="media-body">
+                <h4>HelloWorld</h4>
+                <p class="text-justify">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                  rem ipsam blanditiis dolores recusandae totam iste similique,
+                  enim quis iusto.
+                </p>
+              </div>
             </section>
-        </div>
-    </main>
-    <div class="container text-center">
-        <div class="btn-group mt-3">
-          <a href="#" class="btn btn-outline-secondary"><<</a>
-          <a href="./1-30.html" class="btn btn-outline-secondary ">1</a>
-          <a href="./30-.html" class="btn btn-outline-secondary active">2</a>
-          <a href="#" class="btn btn-outline-secondary">3</a>
-          <a href="#" class="btn btn-outline-secondary">>></a>
+          </section>
+
+          <!-- Form on tehe left side -->
+          <section
+            class="col-3 d-none d-md-block border rounded p-2 ml-1 d-sm-none d-md-block"
+          >
+            <form action="" class="form-group">
+              <div class="form-group">
+                <label for="" class="form-control-lable font-weight-bold"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  placeholder="Mike"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="" class="form-control-lable font-weight-bold"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  placeholder="Mike@Hello.com"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+            <fieldset class="form-group">
+              <p class="font-weight-bold">Gender</p>
+              <div class="form-check form-check-inline">
+                <label for="" class="form-check-label">
+                  <input
+                    type="radio"
+                    name="rd"
+                    id=""
+                    class="form-check-input"
+                    checked
+                  />Male
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <label for="" class="form-check-label">
+                  <input
+                    type="radio"
+                    name="rd"
+                    id=""
+                    class="form-check-input"
+                  />Female
+                </label>
+              </div>
+            </fieldset>
+            <div class="form-group">
+              <div class="form-check">
+                <label for="" class="form-check-label">
+                  <input
+                    type="checkbox"
+                    name="rd"
+                    id=""
+                    class="form-check-input"
+                  />I'm not a robot!
+                </label>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
+    </main>
+    <div class="container text-center">
+      <div class="btn-group mt-3">
+        <a href="#" class="btn btn-outline-secondary"><<</a>
+        <a href="./1-30.html" class="btn btn-outline-secondary">1</a>
+        <a href="./30-.html" class="btn btn-outline-secondary active">2</a>
+        <a href="#" class="btn btn-outline-secondary">3</a>
+        <a href="#" class="btn btn-outline-secondary">>></a>
+      </div>
+    </div>
     <footer class="bg-warning">
-        <div class="py-3 mt-3">
-            <h6 class="text-center">Here is the footer</h6>
-          </div>
+      <div class="py-3 mt-3">
+        <h6 class="text-center">Here is the footer</h6>
+      </div>
     </footer>
   </body>
   <script src="./js/jquery-3.6.0.min.js"></script>
