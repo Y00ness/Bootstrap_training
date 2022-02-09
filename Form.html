@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <header class="bg-warning sticky-top">
+      <div class="container">
+        <h4 class="pt-1 text-center h4 text-capitalize">
+          a web page for bootstrap
+        </h4>
+      </div>
+      <nav class="navbar bg-dark navbar-dark navbar-expand-md">
+        <div class="container">
+          <a href="./1-30.html" class="navbar-brand m-0">Bootstrap</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#MyNavLinks"
+            aria-controls="MyNavLinks"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="MyNavLinks"
+          >
+            <div class="navbar-nav">
+              <a href="" class="nav-item nav-link">Mountain</a>
+              <a href="" class="nav-item nav-link">Forest</a>
+              <a href="" class="nav-item nav-link">Sky</a>
+              <a href="./Form.html" class="nav-item nav-link">Log in</a>
+              <div class="dropdown">
+                <p
+                  class="nav-item nav-link dropdown-toggle m-0"
+                  data-toggle="dropdown"
+                >
+                  More
+                </p>
+                <div class="dropdown-menu">
+                  <a href="" class="dropdown-item">See</a>
+                  <a href="" class="dropdown-item">Polar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Search Box in nav-bar -->
+          <div class="d-none d-md-block">
+            <form action="" class="form-inline">
+                <div class="input-group input-group-sm">
+                    <input class="form-control" type="text" placeholder="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-light">Find</button>
+                    </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <div class="container mt-4">
+            <form action="">
+                <!-- Name & Email -->
+                <div class="row">
+                    <div class="col-12 col-lg-6 form-group d-md-flex align-items-center">
+                        <label for="" class="form-control-lable font-weight-bold pr-2">Name</label>
+                        <input type="text" class="form-control" placeholder="Please enter ur name" required>
+                    </div>
+                    <div class="col-12 col-lg-6 form-group d-md-flex align-items-center">
+                        <label for="" class="form-control-lable font-weight-bold pr-2">Email</label>
+                        <input type="email" class="form-control" placeholder="Please enter your email" required>
+                    </div>
+                </div>
+                <!-- Description -->
+                <div class="form-group">
+                    <label for="" class="form-control-lable font-weight-bold">Description</label>
+                    <textarea name="" id="" cols="30" rows="2" class="form-control"></textarea>
+                </div>
+                <!-- upload file 'form-group' -->
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Download link- https://</span>
+                        </div>
+                        <input class="form-control" type="text" placeholder="Please share your Files with us">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary">Upload</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Upload file</span>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input">
+                            <label class="custom-file-label">Choose file</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gender & robot -->
+                <div class="form-group d-md-flex">
+                    <p class="font-weight-bold pr-2">Gender</p>
+                    <div class="form-check">
+                        <label for="" class="form-check-label pr-2"><input type="radio" name="gender" class="form-check-input" id="" checked>Male</label>
+                    </div>
+                    <div class="form-check">
+                        <label for="" class="form-check-label"><input type="radio" name="gender" class="form-check-input" id="">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <label for="" class="form-check-label"><input type="checkbox" class="form-check-input">I'm not a robot</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-outline-dark">Comment</button>
+            </form>
+
+            </div>
+        </div>
+    </main>
+    <footer class="bg-warning">
+      <div class="py-3 mt-3">
+        <h6 class="text-center">Here is the footer</h6>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/bootstrap.min.js"></script>
+</html>
