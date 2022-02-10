@@ -120,10 +120,14 @@
                 </div>
                 <div class="form-group">
                     <div class="form-check">
-                        <label for="" class="form-check-label"><input type="checkbox" class="form-check-input">I'm not a robot</label>
+                        <label for="" class="form-check-label" data-toggle="tooltip" data-placement="right" title="Check the box if you're not a robot"><input type="checkbox" class="form-check-input">I'm not a robot</label>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-outline-dark">Comment</button>
+                <!-- lorem ipsum -->
+                <p class="">Lorem ipsum dolor sit, amet <a href="#" class="text-info" data-toggle="tooltip" data-placement="top" title="The designer">Unes_h</a> consectetur adipisicing elit. Ex doloribus iusto nisi, reiciendis exercitationem,
+                  <span tabindex="0" class="text-info" data-toggle="popover" data-trigger="focus" data-placement="top" title="AH1-Z" data-content="It's a NAVY attack hellicopter that made in USA">Click for more info</span> nemo sint hic pariatur ipsam optio atque rerum sapiente dolore est distinctio veniam. Ducimus sunt sint totam, quia molestias reiciendis suscipit quis provident dolores maiores eos nisi, non asperiores, libero aspernatur rem illum aliquid fugiat illo!</p>
+                  <!-- tooltip btn -->
+                <button type="submit" class="btn btn-outline-dark" data-toggle="tooltip" data-placement="bottom" title="Send us your feedback">Comment</button>
             </form>
 
             </div>
@@ -142,4 +146,12 @@
     crossorigin="anonymous"
   ></script>
   <script src="./js/bootstrap.min.js"></script>
+  <script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+  $('[data-toggle="popover"]').popover({
+  trigger: 'focus'
+});
+</script>
 </html>
