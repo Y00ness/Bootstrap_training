@@ -69,6 +69,15 @@
     </header>
     <main>
       <div class="container mt-4">
+        <section>
+          <div class="alert alert-warning text-center alert-dismissible fade show">
+            <button type="button" class="close p-0 " data-dismiss="alert" data-toggle="tooltip" data-placement="right" title="Close" style="position: absolute; top: 0px; right: 5px;"><span>&times;</span></button>
+            <h4 class="alert-heading">Take care of the NATURE</h4>
+             <p class="m-0 h6">please do not pulute the nature</p>
+             <hr>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nihil iusto, molestias dolores quam qui. Fugit temporibus voluptatibus ea expedita, dolore voluptates. Nam temporibus ipsum quis ducimus distinctio dolor officiis?</p>
+          </div>
+        </section>
         <div class="d-flex">
           <!-- MEDIA in the left side of the page -->
           <section class="col-12 col-md-9 border rounded p-2">
@@ -171,6 +180,13 @@
             </div>
           </section>
         </div>
+
+        <!-- alert classes -->
+        <section class="pt-4">
+          <div class="alert alert-danger">
+            Don,t polute the <a href="#" class="alert-link">nature</a>
+          </div>
+        </section>
       </div>
     </main>
     <div class="container text-center">
@@ -195,4 +211,10 @@
     crossorigin="anonymous"
   ></script>
   <script src="./js/bootstrap.min.js"></script>
+  <script>$(".alert").alert()</script>
+  <script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+  </script>
 </html>
