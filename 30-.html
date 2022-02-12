@@ -69,6 +69,8 @@
     </header>
     <main>
       <div class="container mt-4">
+
+        <!-- Warning text with close btn -->
         <section>
           <div class="alert alert-warning text-center alert-dismissible fade show">
             <button type="button" class="close p-0 " data-dismiss="alert" data-toggle="tooltip" data-placement="right" title="Close" style="position: absolute; top: 0px; right: 5px;"><span>&times;</span></button>
@@ -182,9 +184,39 @@
         </div>
 
         <!-- alert classes -->
-        <section class="pt-4">
-          <div class="alert alert-danger">
-            Don,t polute the <a href="#" class="alert-link">nature</a>
+        <section class="pt-4 row">
+          <div class="col-md-6">
+            <div class="alert alert-danger font-weight-bold">
+              Don,t polute the <a href="#" class="alert-link">nature</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="alert alert-warning font-weight-bold">
+              Always see the SKY <span type="button" class="" data-toggle="modal" data-target="#exampleModal">
+                (Click to see modal)
+              </span>
+            </div>
+          </div>
+          <!-- Alert with a modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">THE SKY</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body row">
+                  <div class="col-md-6 text-justify pr-md-0">
+                    <p class="p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi placeat dolore iusto voluptatum tempore neque modi cumque! Aliquid eligendi fugit ab, officiis aut laboriosam porro ad exercitationem voluptatem officia.</p>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="./Media/img/12-3x4.jpg" alt="" class="img-fluid rounded">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
